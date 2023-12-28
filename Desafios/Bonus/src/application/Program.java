@@ -17,5 +17,15 @@ public class Program {
 
         List<Funcionarios> funcionarios = new ArrayList<>();
 
+        for (int i = 0; i < quanFunci; i++) {
+            System.out.println("Nome do funcionário" + (i + 1) + ": ");
+            String nomeFunci = sc.nextLine();
+
+            System.out.println("Salário do funcionário" + (i + 1) + ": ");
+            Double salarioFunci = sc.nextDouble();
+
+
+        }
+
     }
 }

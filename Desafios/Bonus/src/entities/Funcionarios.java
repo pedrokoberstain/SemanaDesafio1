@@ -3,26 +3,36 @@ package entities;
 public class Funcionarios {
 
     private String nome;
-    private String salario;
+    private Double salario;
+    private Double descontoBonus;
+    private Double salarioLiquido;
 
-    public Funcionarios(String nome, String salario) {
+
+    public Funcionarios(String nome, Double salario, Double descontoBonus, Double salarioLiquido) {
         this.nome = nome;
+        this.salario = salario;
+        this.descontoBonus = descontoBonus;
+        this.salarioLiquido = salarioLiquido;
+    }
+
+    public void setSalario(Double salario) {
         this.salario = salario;
     }
 
-    public String getNome() {
-        return nome;
+    public Double getDescontoBonus() {
+        return descontoBonus;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setDescontoBonus(Double descontoBonus) {
+        this.descontoBonus = descontoBonus;
     }
 
-    public String getSalario() {
-        return salario;
+    public Double getSalarioLiquido() {
+        return salarioLiquido;
     }
 
-    public void setSalario(String salario) {
-        this.salario = salario;
+    public void setSalarioLiquido(Double salarioLiquido) {
+        this.salarioLiquido = salarioLiquido;
     }
+
 }
