@@ -29,7 +29,6 @@ public class Program {
         } else {
             System.out.println("Usuário e/ou senha incorretos.");
         }
-
         sc.close();
     }
 }
