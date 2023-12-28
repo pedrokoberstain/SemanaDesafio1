@@ -25,6 +25,7 @@ public class Program {
             Double salarioFunci = sc.nextDouble();
 
 
+
         }
 
     }

@@ -15,24 +15,33 @@ public class Funcionarios {
         this.salarioLiquido = salarioLiquido;
     }
 
-    public void setSalario(Double salario) {
-        this.salario = salario;
+    public String getNome() {
+        return nome;
+    }
+
+    public Double getSalario() {
+        return salario;
     }
 
     public Double getDescontoBonus() {
         return descontoBonus;
     }
 
-    public void setDescontoBonus(Double descontoBonus) {
-        this.descontoBonus = descontoBonus;
-    }
-
     public Double getSalarioLiquido() {
         return salarioLiquido;
     }
 
-    public void setSalarioLiquido(Double salarioLiquido) {
-        this.salarioLiquido = salarioLiquido;
+    private void  calcDescontoBonus() {
+        if (salario <= 1000) {
+            descontoBonus = salario * 0.2;
+        } else if (salario <=2000) {
+            descontoBonus = salario * 0.1;
+        } else {
+            descontoBonus = -salario * 0.1;
+        }
     }
 
+    private void calcSalarioLiquido () {
+        salarioLiquido = salario + descontoBonus;
+    }
 }
