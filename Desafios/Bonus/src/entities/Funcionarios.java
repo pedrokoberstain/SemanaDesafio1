@@ -8,11 +8,11 @@ public class Funcionarios {
     private Double salarioLiquido;
 
 
-    public Funcionarios(String nome, Double salario, Double descontoBonus, Double salarioLiquido) {
+    public Funcionarios(String nome, Double salario) {
         this.nome = nome;
         this.salario = salario;
-        this.descontoBonus = descontoBonus;
-        this.salarioLiquido = salarioLiquido;
+        calcDescontoBonus();
+        calcSalarioLiquido();
     }
 
     public String getNome() {
