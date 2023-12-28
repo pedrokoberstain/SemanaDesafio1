@@ -29,6 +29,8 @@ public class Program {
             funcionarios.add(new Funcionarios(nome, salario));
         }
 
+        System.out.println();
+        // Utilizando o método forEach para iterar sobre cada funcionário na lista funcionarios
         funcionarios.forEach(funcionario -> {
             System.out.println("Funcionário " + funcionario.getNome());
             System.out.println("Salário: " + funcionario.getSalario());
