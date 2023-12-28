@@ -23,6 +23,13 @@ public class Program {
         System.out.println("Senha: ");
         String senhadig = sc.nextLine();
 
+        Usuarios usuario = usuarios.get(usuariodig);
+        if (usuario != null && usuario.getSenha().equals(senhadig)) {
+            System.out.println(Horarios.saudacoes());
+        } else {
+            System.out.println("Usuário e/ou senha incorretos.");
+        }
+
         sc.close();
     }
 }
