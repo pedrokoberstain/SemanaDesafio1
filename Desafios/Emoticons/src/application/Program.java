@@ -12,6 +12,11 @@ public class Program {
         System.out.println("Digite uma mensagem:");
         String mensagem = sc.nextLine();
 
+        int felizes = Emoticons.contarEmot(mensagem, ":-)");
+        int tristes = Emoticons.contarEmot(mensagem, ":-(");
+
+        Emoticons.contarSent(felizes, tristes);
+
         sc.close();
     }
 }

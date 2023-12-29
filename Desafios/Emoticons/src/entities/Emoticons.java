@@ -10,5 +10,14 @@ public class Emoticons {
         }
         return count;
     }
-    
+    public static void contarSent(int felizes, int tristes) {
+        if (felizes == tristes) {
+            System.out.println("neutro");
+        } else if (felizes > tristes) {
+            System.out.println("divertido");
+        } else {
+            System.out.println("chateado");
+        }
+    }
+
 }
